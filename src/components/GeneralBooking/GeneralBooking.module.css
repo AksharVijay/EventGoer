@@ -1,0 +1,181 @@
+.genBody {
+  background-color: #eeeeee;
+  height: auto;
+}
+.genBooking {
+  width: 530px;
+  margin: 0px auto;
+  padding-bottom: 6px;
+  padding-top: 14px;
+  color: rgb(119, 119, 119);
+  text-transform: uppercase;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
+}
+
+.genBook {
+  overflow: auto;
+}
+
+.singleGenBooking {
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.singleGenBookingInside {
+  min-height: 40px;
+  align-items: center;
+  -moz-box-align: center;
+  justify-content: space-between;
+  -moz-box-pack: justify;
+  display: flex;
+  width: auto;
+}
+
+.genEvent {
+  display: flex;
+  justify-content: space-between;
+  -moz-box-pack: justify;
+}
+
+.genEventName {
+  line-height: 24px;
+  margin-bottom: 0px;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.eventPrice {
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.price {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.addBtn {
+  padding: 8px;
+  border: 1px solid rgb(236, 94, 113);
+  width: 72px;
+  color: rgb(236, 94, 113);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -moz-box-pack: justify;
+}
+
+.genBtn {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  opacity: 1;
+  background-color: rgb(221, 221, 221);
+  border: medium none;
+  height: 40px;
+  align-items: center;
+  -moz-box-align: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 530px;
+  justify-content: center;
+  -moz-box-pack: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 16px;
+}
+
+.btns {
+  opacity: 1;
+  background-color: rgb(236, 94, 113);
+  border: medium none;
+  height: 40px;
+  align-items: center;
+  -moz-box-align: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  justify-content: center;
+  -moz-box-pack: center;
+  display: flex;
+  padding: 16px;
+}
+
+.addRemoveBtns {
+  width: 80px;
+  justify-content: space-between;
+  -moz-box-pack: justify;
+  display: flex;
+}
+
+.remove {
+  height: 29px;
+  width: 29px;
+  color: rgb(236, 94, 113);
+  border: 1px solid rgb(236, 94, 113);
+  border-radius: 35px;
+}
+
+.removeText {
+  overflow: hidden;
+  height: 29px;
+  width: 29px;
+  color: rgb(236, 94, 113);
+  fill: currentcolor;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.add {
+  height: 29px;
+  width: 29px;
+  color: rgb(236, 94, 113);
+  border: 1px solid rgb(236, 94, 113);
+  border-radius: 35px;
+}
+
+.addText {
+  overflow: hidden;
+  height: 29px;
+  width: 29px;
+  color: rgb(236, 94, 113);
+  fill: currentcolor;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.genBtnConfirm {
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  width: 530px;
+  flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0px auto;
+}

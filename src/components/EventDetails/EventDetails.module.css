@@ -1,0 +1,138 @@
+.heroEventImage {
+  height: 50vh;
+  margin: 3px auto 0;
+  position: relative;
+}
+
+.eventBg {
+  background-color: #eeeeee;
+  height: 100%;
+}
+
+.bookingDetails {
+  margin: 0px auto;
+  width: 100%;
+  max-height: 200px;
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  transition: all 0.2s ease-in-out 0s;
+  overflow: hidden;
+}
+.nameBook {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-bottom: 16px;
+  justify-content: space-between;
+  -moz-box-pack: justify;
+  display: flex;
+}
+
+.eventNameHeader {
+  max-width: 816px;
+  margin: 0px;
+  user-select: text;
+  cursor: text;
+}
+
+.eventName {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  margin-bottom: 8px;
+  line-height: 28px;
+}
+
+.genre {
+  user-select: text;
+  cursor: text;
+  display: flex;
+}
+
+.genreText {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.bookingBtn {
+  display: flex;
+  justify-content: flex-end;
+  -moz-box-pack: end;
+  flex-grow: 1;
+  -moz-box-flex: 1;
+}
+
+.booking {
+  margin-left: 10px;
+  max-width: 160px;
+  height: 60px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.bookBtn {
+  display: flex;
+  justify-content: center;
+  -moz-box-pack: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  -moz-box-align: center;
+  background-color: rgb(236, 94, 113);
+  border: 1px solid rgb(236, 94, 113);
+  width: 160px;
+}
+
+.venueTime {
+  margin-top: 16px;
+  align-items: center;
+  -moz-box-align: center;
+  display: flex;
+  align-items: flex-start;
+  -moz-box-align: start;
+  flex-grow: 1.5;
+  -moz-box-flex: 1.5;
+  flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-basis: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.dateTime {
+  padding-right: 25px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.dateTimeText {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+.price {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+.dateTimeText::after {
+  content: "|";
+  padding: 10px;
+}

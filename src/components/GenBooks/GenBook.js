@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Event from "../Event/Event";
 import axios from "axios";
-import styles from "./EventList.module.css";
+import styles from "./GenBooks.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import GeneralBooking from "../GeneralBooking/GeneralBooking";
 
-const EventList = () => {
+const GenBook = () => {
   const [posts, setPosts] = useState("");
-  const url = "https://technical-test-api.azurewebsites.net/events";
+  const url = "https://technical-test-api.azurewebsites.net/ga-areas";
 
   useEffect(() => {
     AllPosts();
@@ -26,9 +26,9 @@ const EventList = () => {
 
   return (
     <div className="container">
-      <Event className={styles.Posts} posts={posts} />
+      <GeneralBooking className={styles.Posts} posts={posts} />
     </div>
   );
 };
 
-export default EventList;
+export default GenBook;

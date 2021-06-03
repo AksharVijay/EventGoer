@@ -5,24 +5,28 @@ import EventDetails from "./components/EventDetails/EventDetails";
 import GeneralBooking from "./components/GeneralBooking/GeneralBooking";
 import AllotedSeated from "./components/AllotedSeated/AllotedSeated";
 import Checkout from "./components/Checkout/Checkout";
+import GenBook from "./components/GenBooks/GenBook";
+import Allocated from "./components/Allocated/Allocated";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Switch>
+        {/* <Switch>
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/:title" exact children={<EventDetails />}></Route>
+          <Route path="/:name" exact children={<EventDetails />}></Route>
           <Route path="/GeneralBooking" exact>
             <GeneralBooking />
           </Route>
-        </Switch>
+        </Switch> */}
 
         {/* <EventDetails /> */}
         {/* <GeneralBooking /> */}
+        {/* <GenBook /> */}
         {/* <AllotedSeated /> */}
+        <Allocated />
         {/* <Checkout /> */}
       </div>
     </BrowserRouter>

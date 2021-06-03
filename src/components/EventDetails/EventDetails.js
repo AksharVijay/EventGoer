@@ -1,36 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-import DetailsImage from "../../assets/Event-Ticketing.png";
 import styles from "./EventDetails.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useParams, useLocation } from "react-router-dom";
-import axios from "axios";
-
-// let config = { Authorization: "3055f8f90fa44bbe8bda05385a20690a" };
-// const baseurl = "https://newsapi.org/v2/top-headlines?sources=bbc-news";
+import GeneralBooking from "../GeneralBooking/GeneralBooking";
 
 const EventDetails = (props) => {
   const { state } = useLocation();
 
-  if (!state) return null;
-
-  // const [title, setTitle] = useState("");
-
-  // const { eventName } = useParams();
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`${baseurl}`, { headers: config })
-  //     .then((response) => setTitle(response.data));
-  // }, []);
-
-  // useEffect(() => {
-  //   const neweventName = baseurl.find(
-  //     (eventNames) => eventNames.eventName === parseInt(eventName)
-  //   );
-  //   setTitle(neweventName.title);
-  // }, []);
-
+  if (!state.post) return null;
   return (
     <div>
       <Navbar />
@@ -38,7 +16,7 @@ const EventDetails = (props) => {
         <div className="container">
           <div>
             <img
-              src={DetailsImage}
+              src={state.post.imageUrl}
               alt="ticket"
               width="100%"
               className={styles.heroEventImage}
@@ -48,10 +26,16 @@ const EventDetails = (props) => {
             <div className={styles.nameBook}>
               <div>
                 <div className={styles.eventNameHeader}>
-                  <h1 className={styles.eventName}> {props.title}</h1>
+                  <h1 className={styles.eventName}> {state.post.name}</h1>
                 </div>
                 <div className={styles.genre}>
-                  <div className={styles.genreText}>{props.author}</div>
+                  <div className={styles.genreText}>
+                    <strong>Seats Type :</strong> {state.post.type}
+                  </div>
+                  <div className={styles.bookingLimitText}>
+                    <strong>Booking Limit :</strong>
+                    {state.post.bookingLimit}
+                  </div>
                 </div>
               </div>
               <div className={styles.bookingBtn}>
@@ -65,12 +49,6 @@ const EventDetails = (props) => {
                     </button>
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div className={styles.venueTime}>
-              <div className={styles.dateTime}>
-                <div className={styles.dateTimeText}>{props.author}</div>
-                <div className={styles.price}>{props.author}</div>
               </div>
             </div>
           </div>

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Event from "../Event/Event";
 import axios from "axios";
-import styles from "./EventList.module.css";
+import styles from "./Allocated.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AllotedSeated from "../AllotedSeated/AllotedSeated";
 
 const EventList = () => {
   const [posts, setPosts] = useState("");
-  const url = "https://technical-test-api.azurewebsites.net/events";
+  const url =
+    "https://technical-test-api.azurewebsites.net/allocated-seats?seatIds=1&seatIds=50";
 
   useEffect(() => {
     AllPosts();
@@ -26,7 +28,7 @@ const EventList = () => {
 
   return (
     <div className="container">
-      <Event className={styles.Posts} posts={posts} />
+      <AllotedSeated className={styles.Posts} posts={posts} />
     </div>
   );
 };
